@@ -13,6 +13,7 @@
 - **Beyond Raw Metrics**: Rather than publishing isolated alerts (`redis_pool_utilization = 98%`), it correlates metrics to emit structured `IncidentObservation` objects explaining **Pattern**, **Severity**, **Confidence**, **Evidence**, **Correlations**, **Probable Causes**, **Impacts**, and **Recommended Actions**.
 - **Local-First & Deterministic**: Zero cloud dependencies, zero external AI calls, zero external database requirements. Runs entirely inside your JVM process.
 - **Lightweight & Non-Blocking**: Asynchronous background evaluation, zero overhead on application request paths, lock-free telemetry ingestion, and bounded sliding memory windows.
+- **Microservices Deployment Guide**: See [Microservices Guide](docs/MICROSERVICES_GUIDE.md) for deploying across distributed microservice fleets, Kubernetes, and Grafana alert setup.
 - **10 Out-of-the-Box Incident Detectors**:
   - `POOL_SATURATION`
   - `RETRY_STORM`
