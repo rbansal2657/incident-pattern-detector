@@ -1,0 +1,16 @@
+# Target / Build directories
+target/
+*.class
+
+# IDE & Editor files
+.idea/
+*.iml
+.classpath
+.project
+.settings/
+.vscode/
+
+# Logs & System
+*.log
+.DS_Store
+Thumbs.db

@@ -1,0 +1,28 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: incident-detector-examples
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health, info, prometheus, incident-detector
+
+incident-detector:
+  enabled: true
+  evaluation-interval: 5s
+  baseline-window: 10m
+  cooldown-window: 5s
+
+  publishers:
+    prometheus:
+      enabled: true
+    opentelemetry:
+      enabled: true
+    json:
+      enabled: true
+    storage:
+      enabled: true
